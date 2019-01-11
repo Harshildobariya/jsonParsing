@@ -10,7 +10,27 @@ import UIKit
 
 class DetailVC: UIViewController {
 
+    @IBOutlet weak var capitalLBL: UILabel!
+    @IBOutlet weak var regionLBL: UILabel!
+    @IBOutlet weak var subregionLBL: UILabel!
+    @IBOutlet weak var alpha3Code: UILabel!
+    @IBOutlet weak var alpha2CodeLBL: UILabel!
+    
+    var stralpha3Code = ""
+    var strregion = ""
+    var strcapital = ""
+    var strsubregion = ""
+    var stralpha2Code = ""
+    
+    
     override func viewDidLoad() {
+        
+        capitalLBL.text = strcapital
+        regionLBL.text = strregion
+        subregionLBL.text = strsubregion
+        alpha2CodeLBL.text = stralpha2Code
+        alpha3Code.text = stralpha3Code
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
